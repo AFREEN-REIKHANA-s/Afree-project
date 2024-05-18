@@ -1,0 +1,56 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color:#008000;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main section styles */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    text-align: center; /* Align headings in the center */
+}
+
+.categories h3, .products h3 {
+    margin-top: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color:#008000 ;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
