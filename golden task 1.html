@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">MyMusic</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Radio</a></li>
+                    <li><a href="#">Your Library</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="user-avatar.png" alt="User Avatar">
+                <span>Username</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for songs, artists, albums...">
+            </div>
+            <div class="currently-playing">
+                <img src="album-cover.jpg" alt="Album Cover">
+                <div class="song-info">
+                    <h2>Song Title</h2>
+                    <p>Artist Name</p>
+                </div>
+            </div>
+            <div class="recommended">
+                <h3>Recommended Playlists</h3>
+                <div class="playlist-grid">
+                    <div class="playlist-item">
+                        <img src="playlist1.jpg" alt="Playlist 1">
+                        <p>Playlist 1</p>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="playlist2.jpg" alt="Playlist 2">
+                        <p>Playlist 2</p>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="playlist3.jpg" alt="Playlist 3">
+                        <p>Playlist 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <h3>Up Next</h3>
+                <ul>
+                    <li>Next Song 1</li>
+                    <li>Next Song 2</li>
+                    <li>Next Song 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="control-btn">Previous</button>
+        <button class="control-btn">Play/Pause</button>
+        <button class="control-btn">Next</button>
+        <div class="volume-control">
+            <input type="range" min="0" max="100" value="50">
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,56 +1,173 @@
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* Header styles */
-header {
-    background-color:#008000;
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #1e1e1e;
     color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-nav ul {
-    list-style-type: none;
+.sidebar nav ul {
+    list-style: none;
 }
 
-nav ul li {
-    display: inline;
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+    color: #fff;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #282828;
+    overflow-y: auto;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.currently-playing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.currently-playing img {
+    width: 150px;
+    height: 150px;
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.song-info h2 {
+    font-size: 24px;
 }
 
-/* Main section styles */
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+.song-info p {
+    font-size: 18px;
+    color: #ccc;
 }
 
-section h2 {
+.recommended {
+    margin-top: 20px;
+}
+
+.recommended h3 {
+    font-size: 20px;
     margin-bottom: 10px;
-    text-align: center; /* Align headings in the center */
 }
 
-.categories h3, .products h3 {
-    margin-top: 0;
+.playlist-grid {
+    display: flex;
+    gap: 20px;
 }
 
-/* Footer styles */
-footer {
-    background-color:#008000 ;
-    color: #fff;
-    padding: 10px 20px;
+.playlist-item {
     text-align: center;
+}
+
+.playlist-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.playlist h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+}
+
+.playlist ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer .control-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer .control-btn:hover {
+    color: #1db954;
+}
+
+.footer .volume-control input {
+    width: 100px;
 }
